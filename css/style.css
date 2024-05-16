@@ -1,3 +1,59 @@
+
 body{
-  
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+div#listings{
+    padding-top: 50px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap:20px;
+}
+
+.listing-card{
+    border: 1px whitesmoke solid;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+h3{
+    
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    width:300px;
+    justify-content: space-around;
+    justify-self: center;
+
+}
+
+button{
+    background-color: white;
+    border: 1px whitesmoke solid;
+    border-radius: 7px;
+    padding: 5px
+
+}
+
+h3{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
 }

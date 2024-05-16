@@ -26,5 +26,5 @@ app.use('/houses', housesRouter);
 
 // Request Listener
 app.listen(PORT, function() {
-  console.log('Server running on ${PORT}');
+  console.log(`Server running on ${PORT}`);
 });

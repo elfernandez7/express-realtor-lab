@@ -31,6 +31,7 @@ function render() {
     listingsEl.innerHTML = ''
     apartments.forEach((apartment) => {
         const cardEl = document.createElement('div');
+        cardEl.setAttribute('class','listing-card');
         cardEl.innerHTML = `<h3>${apartment.address}</h3>`;
         const listEl = document.createElement('ul');
         listEl.innerHTML = `
@@ -56,6 +57,7 @@ function render() {
     listingsEl.innerHTML = ''
     houses.forEach((house) => {
         const cardEl = document.createElement('div');
+        cardEl.setAttribute('class','listing-card');
         cardEl.innerHTML = `<h3>${house.address}</h3>`;
         const listEl = document.createElement('ul');
         listEl.innerHTML = `

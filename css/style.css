@@ -26,9 +26,11 @@ div#listings{
     background-color: white;
 }
 
-h3{
-    
+.listing-card:hover{
+    background-color: whitesmoke;
 }
+
+
 
 ul{
     display: flex;
@@ -52,8 +54,13 @@ button{
 
 }
 
+button:hover{
+    background-color: whitesmoke;
+}
+
 h3{
     width: 100%;
     justify-content: center;
     text-align: center;
 }
+

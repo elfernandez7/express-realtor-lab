@@ -6,13 +6,16 @@ let houses;
 const listingsEl = document.getElementById('listings');
 
 //Event Listeners
-document.getElementById('aptsBtn').addEventListener('click', function(evt){
+const aptsBtn = document.getElementById('aptsBtn');
+const houseBtn = document.getElementById('houseBtn');
+
+aptsBtn.addEventListener('click', function(evt){
     evt.preventDefault();
     console.log('Show Apartments');
     fetchApartments();
 });
 
-document.getElementById('houseBtn').addEventListener('click', function(evt){
+houseBtn.addEventListener('click', function(evt){
     evt.preventDefault();
     console.log('Show Houses');
     fetchHouses();
@@ -24,6 +27,8 @@ async function fetchApartments() {
     const response = await fetch('http://localhost:3000/apartments');
     const apartments = await response.json();
     console.log(apartments);
+    aptsBtn.style.backgroundColor ='whitesmoke';
+    houseBtn.style.backgroundColor ='white';
     render();
 
 
@@ -50,6 +55,8 @@ async function fetchHouses() {
     const response = await fetch('http://localhost:3000/houses');
     const houses = await response.json();
     console.log(houses);
+    houseBtn.style.backgroundColor = 'whitesmoke';
+    aptsBtn.style.backgroundColor= 'white';
     render();
 
 
